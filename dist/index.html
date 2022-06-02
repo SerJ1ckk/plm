@@ -92,22 +92,52 @@
                         <input class="form__input" type="text" placeholder="Email">
 
                         <label class="form__label" for="guests">Гости</label>
-                        <select class="form__select" name="guests" id="guests">
-                            <option>Сколько гостей</option>
-                            <option value="1">1 гость</option>
-                            <option value="2">2 гостя</option>
-                            <option value="3">3 гостя</option>
-                            <option value="4">4 гостя</option>
-                            <option value="5">5 гостей</option>
+                        <select class="select" name="language">
+                            <option disabled>Выбрать</option>
+                            <option value="HTML">HTML</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="PHP">PHP</option>
                         </select>
 
                     </form>
 
-                    <form action="#" class="form-reg">
-                        <label for="" class="form-reg _label">Регистрация аккаунта</label>
-                        <input class="form__input" type="text" placeholder="Имя">
-                        <input class="form__input" type="text" placeholder="Фамилия">
+                    
+                    <form action="" class="form__reg reg-form">
+                        <fieldset class="reg-form__form">
+                            <legend class="reg-form__title">Регистрация аккаунта</legend>
+                            <input type="text" placeholder="Имя" class="reg-form__fname _input-text">
+                            <input type="text" placeholder="Фамилия" class="reg-form__sname _input-text">
+
+                            <div class="reg-form__gender gender">
+                                <div class="gender__item">
+                                    <input type="radio" name="gender" checked value="male">Мужской
+                                </div>
+                                <div class="gender__item">
+                                    <input type="radio" name="gender" value="female">Женский
+                                </div>
+                            </div>
+
+                            <label class="reg-form__label">Дата Рождения</label>
+                            <input type="date" placeholder="ДД.ММ.ГГГГ" class="reg-form__date _input-text">
+
+                            <label class="reg-form__label">Данные для входа в сервис</label>
+                            <input type="email" placeholder="Email" class="reg-form__email _input-text">
+                            <input type="password" placeholder="Пароль" class="reg-form__pass _input-text">
+
+                            <div class="reg-form__checkbox checkbox">
+                                <input type="checkbox" name="receive">
+                                <label>Получать спецпредложения</label>
+                            </div>
+
+                            <button type="submit" class="reg-form__submit btn ">Перейти к оплате<span class="reg-form__submit_arrow _icon-arrow_forward"></span></button>
+
+                            <div class="reg-form__login login">
+                                <p class="login__text">Уже есть аккаунт на Toxin</p><a href="#" class="btn-border">Войти</a>
+                            </div>
+                            
+                        </fieldset>
                     </form>
+
                 </div>
             </main>
             <footer class="footer">
