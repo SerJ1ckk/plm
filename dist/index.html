@@ -88,25 +88,75 @@
 </header>
             <main class="main">
                 <div class="form__container _container">
-                    <form action="#" class="form">
-                        <input class="form__input" type="text" placeholder="Email">
+                    <div action="#" class="form search-form">
+                        <div class="search-form__form">
+                            <legend class="search-form__title _title-from">Найдём номера под ваши пожелания</legend>
+                            <div class="search-form__date">
+                                <div class="search-form__item">
+                                    <label class="_label-from">Прибытие</label>
+                                    <input type="date" placeholder="ДД.ММ.ГГГГ" class="_input-text">
+                                </div>
+                                <div class="search-form__item">
+                                    <label class="_label-from">Выезд</label>
+                                    <input type="date" placeholder="ДД.ММ.ГГГГ" class="_input-text">
+                                </div>
+                            </div>
+                            
+                            <label class="_label-from" for="guests ">Гости</label>
+                            <select class="search-form__select" name="guests">
+                                <option disabled>Сколько гостей</option>
+                                <option value="Adults">Взрослые</option>
+                                <option value="Children">Дети</option>
+                                <option value="Babies">Младенцы</option>
+                            </select>
 
-                        <label class="form__label" for="guests">Гости</label>
-                        <select class="select" name="language">
-                            <option disabled>Выбрать</option>
-                            <option value="HTML">HTML</option>
-                            <option value="JavaScript">JavaScript</option>
-                            <option value="PHP">PHP</option>
-                        </select>
+                            <button type="submit" class="reg-form__submit btn ">Подобрать номер<span class="reg-form__submit_arrow _icon-arrow_forward"></span></button>
+                        </div>
+                    </div>
 
-                    </form>
+                    <div class="new-select">
+                        <div class="new-select__item">
+                            <span class="new-select__title">Взрослые</span>
+                            <div class="guests__quantity quantity">
+                                <div class="quantity__button quantity__button_minus"><span>-</span></div>
+                                <div class="quantity__input">
+                                    <input type="text" name="form[]" value="0">
+                                </div>
+                                <div class="quantity__button quantity__button_plus"><span>+</span></div>
+                            </div>
+                        </div>
+                        <div class="new-select__item">
+                            <span class="new-select__title">Дети</span>
+                            <div class="guests__quantity quantity">
+                                <div class="quantity__button quantity__button_minus"><span>-</span></div>
+                                <div class="quantity__input">
+                                    <input type="text" name="form[]" value="0">
+                                </div>
+                                <div class="quantity__button quantity__button_plus"><span>+</span></div>
+                            </div>
+                        </div>
+                        <div class="new-select__item">
+                            <span class="new-select__title">Младенцы</span>
+                            <div class="guests__quantity quantity">
+                                <div class="quantity__button quantity__button_minus"><span>-</span></div>
+                                <div class="quantity__input">
+                                    <input type="text" name="form[]" value="0">
+                                </div>
+                                <div class="quantity__button quantity__button_plus"><span>+</span></div>
+                            </div>
+                        </div>
+                        <div class="new-select__buttons buttons">
+                            <button type="reset" class="buttons__text">Очистить</button>
+                            <button type="submit" class="buttons__text">Применить</button>
+                        </div>
+                    </div>
 
                     
-                    <form action="" class="form__reg reg-form">
+                    <form action="" class="form reg-form">
                         <fieldset class="reg-form__form">
-                            <legend class="reg-form__title">Регистрация аккаунта</legend>
-                            <input type="text" placeholder="Имя" class="reg-form__fname _input-text">
-                            <input type="text" placeholder="Фамилия" class="reg-form__sname _input-text">
+                            <legend class="reg-form__title _title-from">Регистрация аккаунта</legend>
+                            <input type="text" placeholder="Имя" class="_input-text">
+                            <input type="text" placeholder="Фамилия" class="_input-text">
 
                             <div class="reg-form__gender gender">
                                 <div class="gender__item">
@@ -117,12 +167,12 @@
                                 </div>
                             </div>
 
-                            <label class="reg-form__label">Дата Рождения</label>
-                            <input type="date" placeholder="ДД.ММ.ГГГГ" class="reg-form__date _input-text">
+                            <label class="_label-from">Дата Рождения</label>
+                            <input type="date" placeholder="ДД.ММ.ГГГГ" class="_input-text">
 
-                            <label class="reg-form__label">Данные для входа в сервис</label>
-                            <input type="email" placeholder="Email" class="reg-form__email _input-text">
-                            <input type="password" placeholder="Пароль" class="reg-form__pass _input-text">
+                            <label class="_label-from">Данные для входа в сервис</label>
+                            <input type="email" placeholder="Email" class="_input-text">
+                            <input type="password" placeholder="Пароль" class="_input-text">
 
                             <div class="reg-form__checkbox checkbox">
                                 <input type="checkbox" name="receive">
