@@ -87,8 +87,8 @@
     </div>
 </header>
             <main class="main">
-                <div class="form__container _container">
-                    <div action="#" class="form search-form">
+                <div class="main__page-search _container">
+                    <from action="#" method="post" class="form search-form">
                         <div class="search-form__form">
                             <legend class="search-form__title _title-from">Найдём номера под ваши пожелания</legend>
                             <div class="search-form__date">
@@ -103,91 +103,19 @@
                             </div>
                             
                             <label class="_label-from" for="guests ">Гости</label>
-                            <select class="search-form__select" name="guests">
-                                <option disabled>Сколько гостей</option>
-                                <option value="Adults">Взрослые</option>
-                                <option value="Children">Дети</option>
-                                <option value="Babies">Младенцы</option>
-                            </select>
+                            <div class="search-form__select" name="guests">
+                                <div class="disabled">Сколько гостей</div>
+                                <div class="search-form__guest">Взрослые</div>
+                                <div class="search-form__guest">Дети</div>
+                                <div class="search-form__guest">Младенцы</div>
+                            </div>
 
                             <button type="submit" class="reg-form__submit btn ">Подобрать номер<span class="reg-form__submit_arrow _icon-arrow_forward"></span></button>
                         </div>
+                    </from>
+                    <div class="main__text">
+                        Лучшие номера для вашей работы,</br> отдыха и просто вдохновения 
                     </div>
-
-                    <div class="new-select">
-                        <div class="new-select__item">
-                            <span class="new-select__title">Взрослые</span>
-                            <div class="guests__quantity quantity">
-                                <div class="quantity__button quantity__button_minus"><span>-</span></div>
-                                <div class="quantity__input">
-                                    <input type="text" name="form[]" value="0">
-                                </div>
-                                <div class="quantity__button quantity__button_plus"><span>+</span></div>
-                            </div>
-                        </div>
-                        <div class="new-select__item">
-                            <span class="new-select__title">Дети</span>
-                            <div class="guests__quantity quantity">
-                                <div class="quantity__button quantity__button_minus"><span>-</span></div>
-                                <div class="quantity__input">
-                                    <input type="text" name="form[]" value="0">
-                                </div>
-                                <div class="quantity__button quantity__button_plus"><span>+</span></div>
-                            </div>
-                        </div>
-                        <div class="new-select__item">
-                            <span class="new-select__title">Младенцы</span>
-                            <div class="guests__quantity quantity">
-                                <div class="quantity__button quantity__button_minus"><span>-</span></div>
-                                <div class="quantity__input">
-                                    <input type="text" name="form[]" value="0">
-                                </div>
-                                <div class="quantity__button quantity__button_plus"><span>+</span></div>
-                            </div>
-                        </div>
-                        <div class="new-select__buttons buttons">
-                            <button type="reset" class="buttons__text">Очистить</button>
-                            <button type="submit" class="buttons__text">Применить</button>
-                        </div>
-                    </div>
-
-                    
-                    <form action="" class="form reg-form">
-                        <fieldset class="reg-form__form">
-                            <legend class="reg-form__title _title-from">Регистрация аккаунта</legend>
-                            <input type="text" placeholder="Имя" class="_input-text">
-                            <input type="text" placeholder="Фамилия" class="_input-text">
-
-                            <div class="reg-form__gender gender">
-                                <div class="gender__item">
-                                    <input type="radio" name="gender" checked value="male">Мужской
-                                </div>
-                                <div class="gender__item">
-                                    <input type="radio" name="gender" value="female">Женский
-                                </div>
-                            </div>
-
-                            <label class="_label-from">Дата Рождения</label>
-                            <input type="text" placeholder="ДД.ММ.ГГГГ" class="datepicker-here _input-text">
-
-                            <label class="_label-from">Данные для входа в сервис</label>
-                            <input type="email" placeholder="Email" class="_input-text">
-                            <input type="password" placeholder="Пароль" class="_input-text">
-
-                            <div class="reg-form__checkbox checkbox">
-                                <input type="checkbox" name="receive">
-                                <label>Получать спецпредложения</label>
-                            </div>
-
-                            <button type="submit" class="reg-form__submit btn ">Перейти к оплате<span class="reg-form__submit_arrow _icon-arrow_forward"></span></button>
-
-                            <div class="reg-form__login login">
-                                <p class="login__text">Уже есть аккаунт на Toxin</p><a href="#" class="btn-border">Войти</a>
-                            </div>
-                            
-                        </fieldset>
-                    </form>
-
                 </div>
             </main>
             <footer class="footer">
