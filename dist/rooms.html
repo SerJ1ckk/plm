@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="css/nouislider.min.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
+     
+    <title>Rooms</title>
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__wrapper">
+        <div class="header__container _container">
+            <div class="header__body">
+                <div class="header__logo">
+                    <a href="" class="header__link _icon-toxin">
+                        <img src="img/header/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="header__main">
+                    <div class="header__menu menu">
+                        <nav class="menu__body">
+                            <ul data-spollers="768,max" class="menu__list">
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">О нас</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">Усуги</a>
+                                    <button data-spoller type="button" class="menu__arrow _icon-arrow_down"></button>
+                                    <ul class="menu__sub-list">
+                                        <li class="menu__sub-item">
+                                            <a href="" class="menu__sub-link">Услуга #1</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="" class="menu__sub-link">Услуга #2</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="" class="menu__sub-link">Услуга #3</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="" class="menu__sub-link">Услуга #4</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="" class="menu__sub-link">Услуга #5</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">Вакансии</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">Новости</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">Соглашения</a>
+                                    <button data-spoller type="button" class="menu__arrow _icon-arrow_down"></button>
+                                    <ul class="menu__sub-list">
+                                        <li class="menu__sub-item">
+                                            <a href="" class="menu__sub-link">Соглашение #1</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="" class="menu__sub-link">Соглашение #2</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="" class="menu__sub-link">Соглашение #3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <button class="menu__icon icon-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="header__auth">
+                    <a href="#" class="header__login btn-border">Войти</a>
+                    <a href="#" class="header__reg btn">Зарегистрироваться</a>
+                    <a href="#" class="header__user">Юлий Цезарь</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+            <main class="rooms">
+                <div class="rooms__page _container">
+                    <div class="rooms__menu">
+                        <div class="rooms__form">
+                            <label class="_label-form">Даты пребывания в отеле</label>
+                            <input type="text" placeholder="ДД.ММ.ГГГГ" class="datepicker-here _input-text">
+
+                            <label class="_label-form" for="guests ">Гости</label>
+                            <div class="search-form__select" name="guests">
+                                <div class="disabled">Сколько гостей</div>
+                                <div class="search-form__guest">Взрослые</div>
+                                <div class="search-form__guest">Дети</div>
+                                <div class="search-form__guest">Младенцы</div>
+                            </div>
+                            <div class="filter-price">
+                                <h3 class="filter-price__title">Диапазон цены <span>5000&#8381;-10000&#8381;</span></h3>
+                                <div class="filter-price__slider" id="range-slider"></div>
+                                <div class="filter-price__inputs">
+                                    <label class="filter-price__label">
+                                        <span class="filter-price__text">от</span>
+                                        <input type="number" min="5000" max="10000" placeholder="5000" class="filter-price__input" id="input-0">
+                                        <span class="filter-price__text">&#8381;</span>
+                                    </label>
+                                    <label class="filter-price__label">
+                                        <span class="filter-price__text">до</span>
+                                        <input type="number" min="5000" max="10000" placeholder="10000" class="filter-price__input" id="input-1">
+                                        <span class="filter-price__text">&#8381;</span>
+                                    </label>
+                                </div>
+                                <p class="filter-price__desc">Стоимость за сутки пребывания в номере</p>
+                            </div>
+                            <div class="checkbox-widget widget">
+                                <div class="widget__list">
+                                    <h3 class="widget__title">Правила дома</h3>
+                                    <ul class="widget__ul">
+                                        <li class="widget__item">
+                                            <input type="checkbox" id="smoke" name="house_rules" value="smoke">
+                                            <label class="widget__label" for="smoke">Можно курить</label>
+                                        </li>
+                                        <li class="widget__item">
+                                            <input type="checkbox" id="pets" name="house_rules" value="pets">
+                                            <label class="widget__label" for="pets">Можно с питомцами</label>
+                                        </li>
+                                        <li class="widget__item">
+                                            <input type="checkbox" id="guests" name="house_rules" value="guests">
+                                            <label class="widget__label" for="guests">Можно пригласить гостей <span>(до 10 человек)</span></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="checkbox-widget widget">
+                                <div class="widget__list">
+                                    <h3 class="widget__title">Доступность</h3>
+                                    <ul class="widget__ul">
+                                        <li class="widget__item">
+                                            <input type="checkbox" id="hallway" name="availability" value="hallway">
+                                            <label class="widget__label_dark" for="hallway">Широкий коридор </label>
+                                            <p class="widget__text">Ширина коридоров в номере не менее 91 см.</p>
+                                        </li>
+                                        <li class="widget__item">
+                                            <input type="checkbox" id="disabled" name="availability" value="disabled">
+                                            <label class="widget__label_dark" for="disabled">Помощник для инвалидов</label>
+                                            <p class="widget__text">На 1 этаже вас встретит специалист и проводит до номера</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <label class="_label-form" for="guests ">Удобство номера</label>
+                            <div class="search-form__select" name="guests">
+                                <div class="disabled">Сколько спален</div>
+                                <div class="search-form__guest">Спальни</div>
+                                <div class="search-form__guest">Кровати</div>
+                                <div class="search-form__guest">Ванные комнаты</div>
+                            </div>
+                            <div data-spollers class="checkbox-widget widget">
+                                <button data-spoller class="widget__menu">
+                                    <span class="widget__title">Дополнительные удобства</span>
+                                    <span class="_icon-arrow_down"></span>
+                                </button>
+                                <div class="widget__list">
+                                    <ul class="widget__ul">
+                                        <li class="widget__item">
+                                            <input type="checkbox" id="breakfast" name="services" value="breakfast">
+                                            <label class="widget__label" for="breakfast">Завтрак</label>
+                                        </li>
+                                        <li class="widget__item">
+                                            <input type="checkbox" id="table" name="services" value="table">
+                                            <label class="widget__label" for="table">Письменный стол</label>
+                                        </li>
+                                        <li class="widget__item">
+                                            <input type="checkbox" id="feeding_chair" name="services" value="feeding_chair">
+                                            <label class="widget__label" for="feeding_chair">Стул для кормления</label>
+                                        </li>
+                                        <li class="widget__item">
+                                            <input type="checkbox" id="сib" name="services" value="сrib">
+                                            <label class="widget__label" for="сrib">Кроватка</label>
+                                        </li>
+                                        <li class="widget__item">
+                                            <input type="checkbox" id="tv" name="services" value="tv">
+                                            <label class="widget__label" for="tv">Телевизор</label>
+                                        </li>
+                                        <li class="widget__item">
+                                            <input type="checkbox" id="shampoo" name="services" value="shampoo">
+                                            <label class="widget__label" for="shampoo">Шампунь</label>
+                                        </li>
+                                        <li class="widget__item">
+                                            <input type="checkbox" id="brush" name="services" value="brush">
+                                            <label class="widget__label" for="brush">Щётка</label>
+                                        </li>
+                                        <li class="widget__item">
+                                            <input type="checkbox" id="sponge" name="services" value="sponge">
+                                            <label class="widget__label" for="sponge">Губка</label>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rooms__view">
+                        <h1 class="rooms__title">Номера, которые мы для вас подобрали</h1>
+                        <div class="rooms__items">
+                            <div class="rooms__item main-slider__container">
+                                <div class="main-slider__body">
+                                    <div class="main-slider__slider slider-main">
+                                        <div class="slider-main__body _swiper">
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_01.jpg" alt="bed_01">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_02.jpg" alt="bed_02">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_03.jpg" alt="bed_03">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_04.jpg" alt="bed_04">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-main__controls controls-slider-main">
+                                            <div class="controls-slider-main__arrows slider-arrows">
+                                                <button type="button" class="slider-arrow slider-arrow_prev _icon-arrow_down"></button>
+                                                <button type="button" class="slider-arrow slider-arrow_next _icon-arrow_down"></button>
+                                            </div>
+                                            <div class="controls-slider-main__dotts"></div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="main-slider__content content-main">
+                                    <div class="content-main__top">
+                                        <div class="content-main__title">№888 <span>люкс</span></div>
+                                        <div class="content-main__price"><span>9 990&#8381;</span> в сутки</div>
+                                    </div>
+                                    <div class="content-main__bottom">
+                                        <div class="content-main__stars">
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                        </div>
+                                        <div class="content-main__feedback"><span>145</span> отзывов</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rooms__item main-slider__container">
+                                <div class="main-slider__body">
+                                    <div class="main-slider__slider slider-main">
+                                        <div class="slider-main__body _swiper">
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_01.jpg" alt="bed_01">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_02.jpg" alt="bed_02">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_03.jpg" alt="bed_03">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_04.jpg" alt="bed_04">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-main__controls controls-slider-main">
+                                            <div class="controls-slider-main__arrows slider-arrows">
+                                                <button type="button" class="slider-arrow slider-arrow_prev _icon-arrow_down"></button>
+                                                <button type="button" class="slider-arrow slider-arrow_next _icon-arrow_down"></button>
+                                            </div>
+                                            <div class="controls-slider-main__dotts"></div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="main-slider__content content-main">
+                                    <div class="content-main__top">
+                                        <div class="content-main__title">№888 <span>люкс</span></div>
+                                        <div class="content-main__price"><span>9 990&#8381;</span> в сутки</div>
+                                    </div>
+                                    <div class="content-main__bottom">
+                                        <div class="content-main__stars">
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                        </div>
+                                        <div class="content-main__feedback"><span>145</span> отзывов</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rooms__item main-slider__container">
+                                <div class="main-slider__body">
+                                    <div class="main-slider__slider slider-main">
+                                        <div class="slider-main__body _swiper">
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_01.jpg" alt="bed_01">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_02.jpg" alt="bed_02">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_03.jpg" alt="bed_03">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_04.jpg" alt="bed_04">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-main__controls controls-slider-main">
+                                            <div class="controls-slider-main__arrows slider-arrows">
+                                                <button type="button" class="slider-arrow slider-arrow_prev _icon-arrow_down"></button>
+                                                <button type="button" class="slider-arrow slider-arrow_next _icon-arrow_down"></button>
+                                            </div>
+                                            <div class="controls-slider-main__dotts"></div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="main-slider__content content-main">
+                                    <div class="content-main__top">
+                                        <div class="content-main__title">№888 <span>люкс</span></div>
+                                        <div class="content-main__price"><span>9 990&#8381;</span> в сутки</div>
+                                    </div>
+                                    <div class="content-main__bottom">
+                                        <div class="content-main__stars">
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                        </div>
+                                        <div class="content-main__feedback"><span>145</span> отзывов</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rooms__item main-slider__container">
+                                <div class="main-slider__body">
+                                    <div class="main-slider__slider slider-main">
+                                        <div class="slider-main__body _swiper">
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_01.jpg" alt="bed_01">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_02.jpg" alt="bed_02">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_03.jpg" alt="bed_03">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_04.jpg" alt="bed_04">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-main__controls controls-slider-main">
+                                            <div class="controls-slider-main__arrows slider-arrows">
+                                                <button type="button" class="slider-arrow slider-arrow_prev _icon-arrow_down"></button>
+                                                <button type="button" class="slider-arrow slider-arrow_next _icon-arrow_down"></button>
+                                            </div>
+                                            <div class="controls-slider-main__dotts"></div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="main-slider__content content-main">
+                                    <div class="content-main__top">
+                                        <div class="content-main__title">№888 <span>люкс</span></div>
+                                        <div class="content-main__price"><span>9 990&#8381;</span> в сутки</div>
+                                    </div>
+                                    <div class="content-main__bottom">
+                                        <div class="content-main__stars">
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                        </div>
+                                        <div class="content-main__feedback"><span>145</span> отзывов</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rooms__item main-slider__container">
+                                <div class="main-slider__body">
+                                    <div class="main-slider__slider slider-main">
+                                        <div class="slider-main__body _swiper">
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_01.jpg" alt="bed_01">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_02.jpg" alt="bed_02">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_03.jpg" alt="bed_03">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_04.jpg" alt="bed_04">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-main__controls controls-slider-main">
+                                            <div class="controls-slider-main__arrows slider-arrows">
+                                                <button type="button" class="slider-arrow slider-arrow_prev _icon-arrow_down"></button>
+                                                <button type="button" class="slider-arrow slider-arrow_next _icon-arrow_down"></button>
+                                            </div>
+                                            <div class="controls-slider-main__dotts"></div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="main-slider__content content-main">
+                                    <div class="content-main__top">
+                                        <div class="content-main__title">№888 <span>люкс</span></div>
+                                        <div class="content-main__price"><span>9 990&#8381;</span> в сутки</div>
+                                    </div>
+                                    <div class="content-main__bottom">
+                                        <div class="content-main__stars">
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                        </div>
+                                        <div class="content-main__feedback"><span>145</span> отзывов</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rooms__item main-slider__container">
+                                <div class="main-slider__body">
+                                    <div class="main-slider__slider slider-main">
+                                        <div class="slider-main__body _swiper">
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_01.jpg" alt="bed_01">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_02.jpg" alt="bed_02">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_03.jpg" alt="bed_03">
+                                                </div>
+                                            </div>
+                                            <div class="slider-main__slide">
+                                                <div class="slider-main__image _ibg">
+                                                    <img src="/img/main/small_bed/bed_04.jpg" alt="bed_04">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-main__controls controls-slider-main">
+                                            <div class="controls-slider-main__arrows slider-arrows">
+                                                <button type="button" class="slider-arrow slider-arrow_prev _icon-arrow_down"></button>
+                                                <button type="button" class="slider-arrow slider-arrow_next _icon-arrow_down"></button>
+                                            </div>
+                                            <div class="controls-slider-main__dotts"></div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="main-slider__content content-main">
+                                    <div class="content-main__top">
+                                        <div class="content-main__title">№888 <span>люкс</span></div>
+                                        <div class="content-main__price"><span>9 990&#8381;</span> в сутки</div>
+                                    </div>
+                                    <div class="content-main__bottom">
+                                        <div class="content-main__stars">
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                            <span class="_icon-star_border"></span>
+                                        </div>
+                                        <div class="content-main__feedback"><span>145</span> отзывов</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+    <div class="footer__container _container">
+        <div class="footer__top">
+            <div class="footer__main">
+                    <a href="" class="footer__logo _icon-toxin">
+                        <img src="img/header/logo.svg" alt="logo">
+                    </a>
+                    <div class="footer__text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации &#171;Отдельные взгляды&#187;</div>    
+            </div>
+            <div data-spollers="768,max" class="footer__menu menu-footer">
+                <div class="menu-footer__column">
+                    <button type="button" data-spoller class="menu-footer__title _footer-title">Навигация</button>
+                    <ul class="menu-footer__list">
+                        <li><a href="" class="menu-footer__link">О нас</a></li>
+                        <li><a href="" class="menu-footer__link">Новости</a></li>
+                        <li><a href="" class="menu-footer__link">Служба поддержки</a></li>
+                        <li><a href="" class="menu-footer__link">Усуги</a></li>
+                    </ul>
+                </div>
+                <div class="menu-footer__column">
+                    <button type="button" data-spoller class="menu-footer__title _footer-title">О нас</button>
+                    <ul class="menu-footer__list">
+                        <li><a href="" class="menu-footer__link">О сервисе</a></li>
+                        <li><a href="" class="menu-footer__link">Наша команда</a></li>
+                        <li><a href="" class="menu-footer__link">Вакансии</a></li>
+                        <li><a href="" class="menu-footer__link">Инвесторы</a></li>
+                    </ul>
+                </div>
+                <div class="menu-footer__column">
+                    <button type="button" data-spoller class="menu-footer__title _footer-title">Служба поддержки</button>
+                    <ul class="menu-footer__list">
+                        <li><a href="" class="menu-footer__link">Соглашения</a></li>
+                        <li><a href="" class="menu-footer__link">Сообщества</a></li>
+                        <li><a href="" class="menu-footer__link">Связь с нами</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__subscribe subscribe">
+                <div class="subscribe__title _footer-title">Подписка</div>
+                <div class="subscribe__text">Получай специальные предложения и новости сервиса</div>
+                <form data-message="subscribe" action="#" class="subscribe__form">
+                    <input autocomplete="off" type="text" name="form[]" placeholder="Email" class="subscribe__input">
+                    <button type="submit" class="subscribe__button _icon-arrow_forward"></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom bottom">
+            <div class="bottom__logo">
+                <a href="" class="bottom__link _icon-toxin">
+                    <img src="img/header/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="bottom__copyright">Copyright &#169; 2018 Toxin отель. Все права защищены.</div>
+            <div class="bottom__social">
+                <a href="https://twitter.com/?lang=ru" target="_blank" class="bottom_icon _icon-twitter"></a>
+                <a href="https://ru-ru.facebook.com/" target="_blank" class="bottom_icon _icon-facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="bottom_icon _icon-inst"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

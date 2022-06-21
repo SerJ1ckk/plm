@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="css/nouislider.min.css"> -->
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
+     
     <title>Blocks</title>
 </head>
     <body>
@@ -90,19 +93,19 @@
                 <div class="form__container _container">
                     <from action="#" method="post" class="form search-form margin100">
                         <div class="search-form__form">
-                            <legend class="search-form__title _title-from">Найдём номера под ваши пожелания</legend>
+                            <h1 class="search-form__title _title-from">Найдём номера под ваши пожелания</h1>
                             <div class="search-form__date">
                                 <div class="search-form__item">
-                                    <label class="_label-from">Прибытие</label>
+                                    <label class="_label-form _icon-arrow_down">Прибытие</label>
                                     <input type="text" placeholder="ДД.ММ.ГГГГ" class="dtr1 _input-text">
                                 </div>
                                 <div class="search-form__item">
-                                    <label class="_label-from">Выезд</label>
+                                    <label class="_label-form _icon-arrow_down">Выезд</label>
                                     <input type="text" placeholder="ДД.ММ.ГГГГ" class="dtr2 _input-text">
                                 </div>
                             </div>
                             
-                            <label class="_label-from" for="guests ">Гости</label>
+                            <label class="_label-form" for="guests ">Гости</label>
                             <div class="search-form__select" name="guests">
                                 <div class="disabled">Сколько гостей</div>
                                 <div class="search-form__guest">Взрослые</div>
@@ -118,20 +121,20 @@
                     <from action="#" method="post" class="form search-form margin100">
                         <div class="search-form__form">
                             <div class="search-form__big-title big-title">
-                                <legend class="search-form__title _title-from">№888 <span>люкс</span></legend>
+                                <h1 class="search-form__title _title-from">№888 <span>люкс</span></h1>
                                 <div class="big-title__price"><span>9 990&#8381;</span> в сутки</div>
                             </div>
                             <div class="search-form__date">
                                 <div class="search-form__item">
-                                    <label class="_label-from">Прибытие</label>
+                                    <label class="_label-form">Прибытие</label>
                                     <input type="text" placeholder="ДД.ММ.ГГГГ" class="dtr1 _input-text">
                                 </div>
                                 <div class="search-form__item">
-                                    <label class="_label-from">Выезд</label>
+                                    <label class="_label-form">Выезд</label>
                                     <input type="text" placeholder="ДД.ММ.ГГГГ" class="dtr2 _input-text">
                                 </div>
                             </div>
-                            <label class="_label-from" for="guests ">Гости</label>
+                            <label class="_label-form" for="guests ">Гости</label>
                             <div class="search-form__select" name="guests">
                                 <div class="disabled">Сколько гостей</div>
                                 <div class="search-form__guest">Взрослые</div>
@@ -144,7 +147,7 @@
                                     <p>39 960&#8381;</p>
                                 </div>
                                 <div class="search-form__services">
-                                    <p class="search-form__icon">Сбор за услуги:скидка 2 179&#8381;</p>
+                                    <p class="search-form__icon">Сбор за услуги: скидка 2 179&#8381;</p>
                                     <p>0&#8381;</p>
                                 </div>
                                 <div class="search-form__services">
@@ -153,7 +156,7 @@
                                 </div>
                             </div>
                             <div class="search-form__result">
-                                Итого 38 081&#8381;
+                                Итого <span></span>38 081&#8381;
                             </div>
 
                             <button type="submit" class="reg-form__submit btn ">Забронировать<span class="reg-form__submit_arrow _icon-arrow_forward"></span></button>
@@ -163,7 +166,7 @@
 
                     <form action="#" class="form reg-form margin100">
                         <fieldset class="reg-form__form">
-                            <legend class="reg-form__title _title-from">Регистрация аккаунта</legend>
+                            <h1 class="reg-form__title _title-from">Регистрация аккаунта</h1>
                             <input type="text" placeholder="Имя" class="_input-text">
                             <input type="text" placeholder="Фамилия" class="_input-text">
 
@@ -176,10 +179,10 @@
                                 </div>
                             </div>
 
-                            <label class="_label-from">Дата Рождения</label>
+                            <label class="_label-form">Дата Рождения</label>
                             <input type="text" placeholder="ДД.ММ.ГГГГ" class="datepicker-here _input-text">
 
-                            <label class="_label-from">Данные для входа в сервис</label>
+                            <label class="_label-form">Данные для входа в сервис</label>
                             <input type="email" placeholder="Email" class="_input-text">
                             <input type="password" placeholder="Пароль" class="_input-text">
 
@@ -199,7 +202,7 @@
 
                     <form action="#" class="form login-form margin100">
                         <fieldset class="login-form__form">
-                            <legend class="login-form__title _title-from">Войти</legend>
+                            <h1 class="login-form__title _title-from">Войти</h1>
                             <input type="text" placeholder="Email" class="_input-text">
                             <input type="text" placeholder="Пароль" class="_input-text">
 
@@ -212,19 +215,19 @@
                     </form>
 
                     <div data-spollers class="checkbox-widget widget margin100">
-                        <button data-spoller class="widget__menu" style="margin-top: 50px;">
+                        <button data-spoller class="widget__menu">
                             <span class="widget__title">Выпадающий чек бокс</span>
                             <span class="_icon-arrow_down"></span>
                         </button>
                         <div class="widget__list">
                             <ul class="widget__ul">
                                 <li class="widget__item">
-                                    <input type="checkbox">
-                                    <label class="widget__label" for="">Завтрак</label>
+                                    <input type="checkbox" id="breakfast" name="services" value="breakfast">
+                                    <label class="widget__label" for="breakfast">Завтрак</label>
                                 </li>
                                 <li class="widget__item">
-                                    <input type="checkbox">
-                                    <label class="widget__label" for="">Письменный стол</label>
+                                    <input type="checkbox" id="table" name="services" value="table">
+                                    <label class="widget__label" for="table">Письменный стол</label>
                                 </li>
                                 <li class="widget__item">
                                     <input type="checkbox">
@@ -254,7 +257,7 @@
                             </ul>
                         </div>
                     </div>
-
+                    
                     <div class="rate__button margin100">
                         <span class="_icon-star_border"></span>
                         <span class="_icon-star_border"></span>
@@ -268,30 +271,107 @@
                         <span class="like__count">32</span>
                     </div>
 
-                    <div class="main-slider__body">
-                        <div class="main-slider__slider slider-main">
-                            <div class="slider-mian__controls controls-slider-main">
-                                <div class="controls-slider-main__arrows slider-arrows">
-                                    <button type="button" class="slider-arrow slider-arrow_prev _icon-arrow-down"></button>
-                                    <button type="button" class="slider-arrow slider-arrow_next _icon-arrow-down"></button>
-                                </div>
-                                <div class="controls-slider-main__dotts"></div>
+                    <div class="main-slider__container" style="margin-top: 100px;">
+                        <div class="main-slider__body">
+                            <div class="main-slider__slider slider-main">
                                 <div class="slider-main__body _swiper">
                                     <div class="slider-main__slide">
                                         <div class="slider-main__image _ibg">
-                                            <img src="/img/main/bed_01.jpg" alt="imge">
+                                            <img src="/img/main/small_bed/bed_01.jpg" alt="bed_01">
+                                        </div>
+                                    </div>
+                                    <div class="slider-main__slide">
+                                        <div class="slider-main__image _ibg">
+                                            <img src="/img/main/small_bed/bed_02.jpg" alt="bed_02">
+                                        </div>
+                                    </div>
+                                    <div class="slider-main__slide">
+                                        <div class="slider-main__image _ibg">
+                                            <img src="/img/main/small_bed/bed_03.jpg" alt="bed_03">
+                                        </div>
+                                    </div>
+                                    <div class="slider-main__slide">
+                                        <div class="slider-main__image _ibg">
+                                            <img src="/img/main/small_bed/bed_04.jpg" alt="bed_04">
                                         </div>
                                     </div>
                                 </div>
+                                <div class="slider-main__controls controls-slider-main">
+                                    <div class="controls-slider-main__arrows slider-arrows">
+                                        <button type="button" class="slider-arrow slider-arrow_prev _icon-arrow_down"></button>
+                                        <button type="button" class="slider-arrow slider-arrow_next _icon-arrow_down"></button>
+                                    </div>
+                                    <div class="controls-slider-main__dotts"></div>
+                                </div> 
                             </div>
                         </div>
                         <div class="main-slider__content content-main">
-                            
+                            <div class="content-main__top">
+                                <div class="content-main__title">№888 <span>люкс</span></div>
+                                <div class="content-main__price"><span>9 990&#8381;</span> в сутки</div>
+                            </div>
+                            <div class="content-main__bottom">
+                                <div class="content-main__stars">
+                                    <span class="_icon-star_border"></span>
+                                    <span class="_icon-star_border"></span>
+                                    <span class="_icon-star_border"></span>
+                                    <span class="_icon-star_border"></span>
+                                    <span class="_icon-star_border"></span>
+                                </div>
+                                <div class="content-main__feedback"><span>145</span> отзывов</div>
+                            </div>
                         </div>
                     </div>
 
-                    
+                    <div class="clients-feedback margin100">
+                        <div class="clients-feedback__who">
+                            <div class="clients-feedback__avatar _ibg">
+                                <img src="img/main/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="clients-feedback__info">
+                                <div class="clients-feedback__name">Мария Сарафанова</div>
+                                <div class="clients-feedback__days">5 дней назад</div>
+                            </div>
+                        </div>
+                        <div class="clients-feedback__response">
+                            <div class="clients-feedback__button">
+                                <div class="like__button">
+                                    <span class="like__like _icon-heart_border"></span>
+                                    <span class="like__count">9</span>
+                                </div>
+                            </div>
+                            <div class="clients-feedback__text">
+                                Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару -- никто не жалловался из соседей.
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="filter-price margin100">
+                        <h3 class="filter-price__title">Диапазон цены <span>5000&#8381;-10000&#8381;</span></h3>
+                        <div class="filter-price__slider" id="range-slider"></div>
+                        <div class="filter-price__inputs">
+                            <label class="filter-price__label">
+                                <span class="filter-price__text">от</span>
+                                <input type="number" min="5000" max="10000" placeholder="5000" class="filter-price__input" id="input-0">
+                                <span class="filter-price__text">&#8381;</span>
+                            </label>
+                            <label class="filter-price__label">
+                                <span class="filter-price__text">до</span>
+                                <input type="number" min="5000" max="10000" placeholder="10000" class="filter-price__input" id="input-1">
+                                <span class="filter-price__text">&#8381;</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="bullet-list margin100">
+                        <h3 class="bullet-list__title">Bullet list</h3>
+                        <ul class="bullet-list__ul">
+                            <li class="bullet-list__li">Нельзя с питомцами</li>
+                            <li class="bullet-list__li">Без вечеринок и мероприятий</li>
+                            <li class="bullet-list__li">Время прибытия -- после 13:00, а выезд до 12:00</li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </main>
             <footer class="footer">
